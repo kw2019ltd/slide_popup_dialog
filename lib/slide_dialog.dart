@@ -45,6 +45,12 @@ class _SlideDialogState extends State<SlideDialog> {
               color: widget.backgroundColor,
               elevation: 24.0,
               type: MaterialType.card,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(20.0),
+                  topRight: Radius.circular(20.0),
+                ),
+              ),
               child: Column(
                 children: <Widget>[
                   PillGesture(
@@ -55,12 +61,6 @@ class _SlideDialogState extends State<SlideDialog> {
                   ),
                   widget.child,
                 ],
-              ),
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.only(
-                  topLeft: Radius.circular(20.0),
-                  topRight: Radius.circular(20.0),
-                ),
               ),
             ),
           ),

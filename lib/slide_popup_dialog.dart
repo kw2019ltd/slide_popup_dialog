@@ -40,9 +40,9 @@ Future<T?> showSlideDialog<T>({
         child: Opacity(
           opacity: animation1.value,
           child: SlideDialog(
-            child: child,
             pillColor: pillColor ?? Colors.blueGrey[200],
             backgroundColor: backgroundColor ?? Theme.of(context).canvasColor,
+            child: child,
           ),
         ),
       );
